@@ -1,16 +1,17 @@
 {
-    "manifest_version": 2,
-    "name": "Unifsearch - The Best New Tab",
-    "version": "1.0",
-    "chrome_url_overrides": {
-      "newtab": "newtab.html"
-    },
-    "permissions": [
-      "tabs"
-    ],
-    "icons": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-    }
+  "manifest_version": 2,
+  "name": "Unifsearch - The Best New Tab",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   }
+}

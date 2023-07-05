@@ -9,16 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="newtab.css">
-  <script src="https://kit.fontawesome.com/04c5cc98c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <main>
-    <section><br><br><br><br><br>
+    <section>
       <h2>Unifsearch</h2>
       <p>Unifying search, for everyone.</p>
-      <br>
       <div class="search-form">
         <div class="search-bar">
           <input type="text" id="searchInput" placeholder="Enter your search term...">
@@ -31,15 +30,24 @@
             <option value="wikipedia">Wikipedia</option>
             <option value="youtube">YouTube</option>
           </select>
-          <button id="searchButton"><i class="fa-solid fa-search"></i> Search</button>
+          <button id="searchButton"><i class="fas fa-search"></i> Search</button>
         </div>
       </div>
     </section>
   </main>
 
+  <div class="icons-container">
+    <a href="https://bedantadey17.github.io/" target="_blank" class="icon-link">
+      <i class="fas fa-globe"></i>
+    </a>
+    <div id="darkModeToggle" class="icon-link">
+      <i class="fas fa-moon"></i>
+    </div>
+  </div>
+
   <footer>
-    &copy; Unifsearch and the chrome extension made by Bedanta Dey and Gray Matter RI. All rights reserved.<br>
-    Visit https://bedantadey17.github.io/ for more info about the developer!
+    Unifsearch and the extension made by Bedanta Dey.<br>
+    Version: 1.0
   </footer>
 
   <script src="newtab.js" defer></script>
