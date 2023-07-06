@@ -113,13 +113,16 @@ p {
   cursor: pointer;
 }
 
-.fa-moon {
+
+/* .fa-moon {
   color: #000;
 }
 
 .fa-globe {
   color: #000;
 }
+*/
+
 
 .dark-mode .icon-link {
   color: #fff;
