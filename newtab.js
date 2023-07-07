@@ -27,9 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function performSearch() {
-    const searchValue = searchInput.value;
+    const searchValue = searchInput.value.trim();
     const searchEngine = document.getElementById('searchEngine').value;
-
+  
+    if (searchValue === '') {
+      window.location.href = 'https://bedantadey17.github.io';
+      return;
+    }
+  
     let url;
     if (searchEngine === 'google') {
       url = `https://www.google.com/search?q=${encodeURIComponent(searchValue)}`;
@@ -42,9 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (searchEngine === 'ddg') {
       url = `https://duckduckgo.com/?q=${encodeURIComponent(searchValue)}`;
     }
-
-    if (url) {
-      window.location.href = url;
-    }
-  }
+  
+  }  
 });
+
+
