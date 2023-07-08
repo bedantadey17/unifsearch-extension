@@ -15,18 +15,22 @@
 
 <body>
   <main>
-    <section><br><br>
+    <section><br><br><br>
       <h2>Unifsearch</h2>
-      <p>Unifying search, for everyone.</p><br><br><br>
+      <p>Unifying search, for everyone.</p><br><br>
       <div class="search-form">
         <div class="search-bar">
-          <input type="text" id="searchInput" placeholder="Enter your search term...">
+          <input type="text" id="searchInput" />
         </div>
         <div class="search-controls">
           <select id="searchEngine">
             <option value="google">Google</option>
             <option value="bing">Bing</option>
             <option value="ddg">DuckDuckGo</option>
+            <option value="startpage">Startpage</option>
+            <option value="ecosia">Ecosia</option>
+            <option value="britannica">Britannica</option>
+            <option value="pubchem">PubChem</option>
             <option value="wikipedia">Wikipedia</option>
             <option value="youtube">YouTube</option>
           </select>
@@ -37,20 +41,27 @@
   </main>
 
   <div class="icons-container">
-    <a href="https://bedantadey17.github.io/" target="_blank" class="icon-link">
+    <a href="https://bedantadey17.github.io/" target="_blank" class="icon-link" title="My Website">
       <i class="fas fa-globe"></i>
     </a>
-    <div id="darkModeToggle" class="icon-link">
+    <a href="https://github.com/bedantadey17/unifsearch-extension" target="_blank" class="icon-link" title="Visit Repo">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://rentry.co/r674m" target="_blank" class="icon-link" title="Read Documentation">
+      <i class="fas fa-book"></i>
+    </a>
+    <div id="darkModeToggle" class="icon-link" title="Toggle Colors">
       <i class="fas fa-moon"></i>
     </div>
   </div>
 
   <footer>
     Unifsearch and the extension made by Bedanta Dey.<br>
-    Version: 1.1
+    Version: 1.2
   </footer>
 
   <script src="newtab.js" defer></script>
+  <script src="placeholder-messages.js" defer></script>
 </body>
 
 </html>
