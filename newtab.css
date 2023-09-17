@@ -2,7 +2,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   padding: 20px;
   margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color ease;
 }
 
 body.light-mode {
@@ -20,7 +20,7 @@ main {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 70px;
   margin-bottom: 10px;
   font-family: 'Ubuntu Mono', monospace;
 }
@@ -48,9 +48,10 @@ p {
 
 .search-bar input[type="text"] {
   width: 300px;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid #000;
-  border-radius: 8px;
+  font-size: 14px;
+  border-radius: 12px;
   background-color: #fff;
   color: #000;
   font-family: "DM Mono", monospace;
@@ -64,32 +65,33 @@ p {
 }
 
 #searchEngine {
-  width: 137px;
-  padding: 10px;
+  width: 140px;
+  padding: 12px;
+  margin-right: 10px;
   font-family: "DM Mono", monospace;
 }
 
 #searchButton {
   width: 177px;
-  padding: 10px 20px;
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border: 2px solid black;
+  border-radius: 12px;
   cursor: pointer;
   font-family: "DM Mono", monospace;
   margin-left: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, aquamarine 0%, rgb(4, 143, 143) 100%);
+  font-size: 14.5px;
+  background-image: linear-gradient(to right, goldenrod 0%, rgb(221, 182, 84) 100%);
 }
 
 #searchButton:hover {
-  background-image: linear-gradient(to right, rgb(112, 212, 179) 0%, rgb(2, 114, 114) 100%);
+  background-image: linear-gradient(to right, rgb(209, 172, 78) 0%, rgb(167, 142, 78) 100%);
 }
 
 .search-controls select {
   padding: 10px;
   border: 2px solid #000;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: #fff;
   color: #000;
   font-family: "DM Mono", monospace;

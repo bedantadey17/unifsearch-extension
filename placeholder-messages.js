@@ -1,23 +1,19 @@
 // Array of placeholder messages
 const placeholderMessages = [
   "Search the web...",
-  "Type your search query...",
   "What are you looking for?",
-  "Why did the chicken cross the road?",
-  "Type something...!",
   "Why u so slow???",
-  "Search stuff, I guess.",
-  "sussy baka",
   "Find what you need...",
   "What does 'search' mean?",
   "rickroll link",
-  "delete search history",
+  "how to delete search history",
   "breaking bad s5ep16",
   "Just click 'Search'.",
   "God's favorite band",
   "bohemian rhapsody",
   "how to get good at ...",
-  "Enter your search term..."
+  "We live, we love, we lie",
+  "corgi my beloved"
 ];
 
 // Function to set a random placeholder message

@@ -3,16 +3,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.getElementById('searchInput');
   const searchEngineSelect = document.getElementById('searchEngine');
   const darkModeToggle = document.getElementById('darkModeToggle');
+  
+  // Load the last selected search engine from localStorage or set the default value
+  searchEngineSelect.value = localStorage.getItem('selectedSearchEngine') || 'google';
 
   searchButton.addEventListener('click', function () {
+    var paragraph = document.getElementById("p");
+    var text = document.createTextNode("Searching...");
+    paragraph.appendChild(text);
+
     performSearch();
   });
 
   searchInput.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
+      var paragraph = document.getElementById("p");
+      var text = document.createTextNode("Searching...");
+      paragraph.appendChild(text);
+
       performSearch();
     }
   });
+
+  // DARK MODE SAVER
 
   darkModeToggle.addEventListener('click', function () {
     const isDarkMode = document.body.classList.toggle('dark-mode');
@@ -26,13 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
   function performSearch() {
     const searchValue = searchInput.value.trim();
     const searchEngine = searchEngineSelect.value;
 
     if (searchValue === '') {
-      window.location.href = 'https://bedantadey17.github.io';
+      window.location.href = 'https://bedantadey.me/';
       return;
     }
 
@@ -55,10 +67,15 @@ document.addEventListener('DOMContentLoaded', function () {
       url = `https://www.britannica.com/search?query=${encodeURIComponent(searchValue)}`;
     } else if (searchEngine === 'pubchem') {
       url = `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(searchValue)}`;
+    } else if (searchEngine === 'brave') {
+      url = `https://search.brave.com/search?q=${encodeURIComponent(searchValue)}`;
     }
 
     if (url) {
       window.location.href = url;
     }
+
+    // SEARCH SAVER
+    localStorage.setItem('selectedSearchEngine', searchEngine);
   }
 });
