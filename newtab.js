@@ -83,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
       case 'ecosia':
         url = `https://www.ecosia.org/search?q=${encodeURIComponent(searchValue)}`;
         break;
+      case 'brave':
+        url = `https://search.brave.com/search?q=${encodeURIComponent(searchValue)}`;
+        break;
       case 'wikipedia':
         url = `https://en.wikipedia.org/wiki/${encodeURIComponent(searchValue)}`;
         break;
@@ -94,9 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
       case 'pubchem':
         url = `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(searchValue)}`;
-        break;
-      case 'brave':
-        url = `https://search.brave.com/search?q=${encodeURIComponent(searchValue)}`;
         break;
     }
     

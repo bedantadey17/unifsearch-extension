@@ -12,10 +12,11 @@ const placeholderMessages = [
   "God's favorite band",
   "bohemian rhapsody",
   "how to get good at ...",
-  "We live, we love, we lie",
-  "corgi my beloved",
+  "we live, we love, we lie",
   "help i became machine oil",
-  "cute cat pictures"
+  "cute cat pictures",
+  "the end of evangelion",
+  "gif or gif"
 ];
 
 // Function to set a random placeholder message
