@@ -13,7 +13,9 @@ const placeholderMessages = [
   "bohemian rhapsody",
   "how to get good at ...",
   "We live, we love, we lie",
-  "corgi my beloved"
+  "corgi my beloved",
+  "help i became machine oil",
+  "cute cat pictures"
 ];
 
 // Function to set a random placeholder message

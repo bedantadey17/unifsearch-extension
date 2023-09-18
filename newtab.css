@@ -5,22 +5,12 @@ body {
   transition: background-color 0.2s ease, color ease;
 }
 
-body.light-mode {
-  background-color: #fff;
-  color: #000;
-}
-
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-
 main {
   text-align: center;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 75px;
   margin-bottom: 10px;
   font-family: 'Ubuntu Mono', monospace;
 }
@@ -116,28 +106,6 @@ p {
 }
 
 
-/* .fa-moon {
-  color: #000;
-}
-
-.fa-globe {
-  color: #000;
-}
-*/
-
-
-.dark-mode .icon-link {
-  color: #fff;
-}
-
-.dark-mode .fa-moon {
-  color: #fff;
-}
-
-.dark-mode .fa-globe {
-  color: #fff;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -149,6 +117,3 @@ footer {
   font-family: "DM Mono", monospace;
 }
 
-.dark-mode footer {
-  color:#fff;
-}
