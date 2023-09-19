@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
       case 'pubchem':
         url = `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(searchValue)}`;
         break;
+      case 'github':
+        url = `https://github.com/search?q=${encodeURIComponent(searchValue)}`;
+        break;
     }
     
     if (url) {
