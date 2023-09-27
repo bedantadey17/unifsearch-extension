@@ -120,4 +120,19 @@ document.addEventListener('DOMContentLoaded', function () {
     return brightness < 128;
   }
 
+
+  // EASTER EGG!!
+  function setRandomTitle() {
+    const randomNumber = Math.random(); 
+    const titleElement = document.querySelector('h2');
+    
+    if (randomNumber <= 0.05) {
+      titleElement.textContent = "☆*: o(≧▽≦)o :*☆";
+    } else {
+      titleElement.textContent = "Unifsearch";
+    }
+  }
+  setRandomTitle();
+
+
 });

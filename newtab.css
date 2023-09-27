@@ -37,7 +37,7 @@ p {
 }
 
 .search-bar input[type="text"] {
-  width: 300px;
+  width: 350px;
   padding: 15px;
   border: 2px solid #000;
   font-size: 14px;
@@ -55,14 +55,14 @@ p {
 }
 
 #searchEngine {
-  width: 140px;
+  width: 177px;
   padding: 12px;
   margin-right: 10px;
   font-family: "DM Mono", monospace;
 }
 
 #searchButton {
-  width: 177px;
+  width: 188px;
   padding: 12px 20px;
   border: 2px solid black;
   border-radius: 12px;
